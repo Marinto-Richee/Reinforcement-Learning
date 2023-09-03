@@ -69,6 +69,23 @@ In this Python representation:<br>
 - Each state is represented as a dictionary key.
 - Actions ("AdjustBladePitch" and "ChangeRotorSpeed") are defined for each state.
 - Each action has a list of possible outcomes, where each outcome is represented as a tuple with the format (probability, next_state, reward, is_terminal).
-
+## Output:
+```
+{'LowWind-LowProduction':
+{'AdjustBladePitch': [(0.8, 'LowWind-HighProduction', 5.0, False), (0.2, 'LowWind-LowProduction', 0.0, False)],
+'ChangeRotorSpeed': [(0.7, 'LowWind-ModerateProduction', 2.0, False), (0.3, 'LowWind-LowProduction', 1.0, False)]},
+'LowWind-ModerateProduction':
+{'AdjustBladePitch': [(0.6, 'LowWind-HighProduction', 3.0, False), (0.4, 'LowWind-ModerateProduction', 0.0, False)],
+'ChangeRotorSpeed': [(0.5, 'LowWind-ModerateProduction', 1.0, False), (0.5, 'LowWind-LowProduction', 0.0, False)]},
+'ModerateWind-HighProduction':
+{'AdjustBladePitch': [(0.9, 'ModerateWind-HighProduction', 10.0, False), (0.1, 'ModerateWind-ModerateProduction', 5.0, False)],
+'ChangeRotorSpeed': [(0.8, 'ModerateWind-ModerateProduction', 2.0, False), (0.2, 'ModerateWind-HighProduction', 1.0, False)]},
+'HighWind-ModerateProduction':
+{'AdjustBladePitch': [(0.7, 'HighWind-HighProduction', 5.0, False), (0.3, 'HighWind-ModerateProduction', 1.0, False)],
+'ChangeRotorSpeed': [(0.6, 'HighWind-HighProduction', 3.0, False), (0.4, 'HighWind-ModerateProduction', 0.0, False)]},
+'HighWind-HighProduction':
+{'AdjustBladePitch': [(0.8, 'HighWind-HighProduction', 10.0, False), (0.2, 'HighWind-ModerateProduction', 5.0, False)],
+'ChangeRotorSpeed': [(1.0, 'HighWind-ModerateProduction', 0.0, True)]}}
+```
 ## Result:
 Hence, we have successfully represented MDP for the Windmill Agent along with its python representation.
