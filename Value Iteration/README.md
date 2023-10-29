@@ -67,9 +67,11 @@ def value_iteration(P, gamma=1.0, theta=1e-10):
     return V, pi
 ```
 ## OUTPUT:
-The output of the Value Iteration algorithm will include:
-- Optimal policy
-- Optimal value function
-- The success rate for the optimal policy
+ ![image](https://github.com/Marinto-Richee/Reinforcement-Learning/assets/65499285/dd5cbcb6-a9fe-427f-9eb0-8a469e4c44e4)
+ ![image](https://github.com/Marinto-Richee/Reinforcement-Learning/assets/65499285/ba015cf4-6b95-42e9-8422-322ec271c3dc)
+ ![image](https://github.com/Marinto-Richee/Reinforcement-Learning/assets/65499285/994f5b78-3c4f-45c4-a398-7b2a7e3f4f2f)
+
+
+
 ## RESULT:
 The result of the experiment will be presented here, including the obtained optimal policy, optimal value function, and success rate for the optimal policy.
