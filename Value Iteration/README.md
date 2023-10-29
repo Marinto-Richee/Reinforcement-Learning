@@ -34,8 +34,51 @@ This uncertainty adds complexity to the agent's navigation.
 ### Episode Termination
 The episode terminates when the agent reaches the goal state (G) or falls into a hole (H).
 
-## POLICY ITERATION ALGORITHM
-Include the steps involved in the value iteration algorithm.
+Certainly! Below is the algorithm for the Value Iteration function in Markdown format:
+
+## Value Iteration Algorithm
+
+**Input:**
+- Transition probabilities `P`
+- Discount factor `gamma`
+- Convergence threshold `theta`
+
+**Output:**
+- Optimal value function `V`
+- Optimal policy `pi`
+
+1. Initialize the value function `V` as an array of zeros, with length equal to the number of states in the problem.
+
+2. **While True:**
+   a. Initialize the action-value function `Q` as an array of zeros, with dimensions (number of states, number of actions).
+   b. **For each state `s` from 0 to the number of states - 1:**
+      i. **For each action `a` from 0 to the number of actions for state `s`:**
+         - **For each transition `(prob, next_state, reward, done)` in the transition probabilities for state `s` and action `a`:**
+           - Update the action-value function `Q[s][a]` using the Bellman equation:
+             ```
+             Q[s][a] += prob * (reward + gamma * V[next_state] * (not done))
+             ```
+   c. Calculate the maximum difference between the old `V` and the new `V`:
+      ```
+      max_diff = np.max(np.abs(V - np.max(Q, axis=1)))
+      ```
+   d. **If `max_diff` is less than `theta`, break out of the loop. This indicates convergence.**
+
+3. Update the value function `V` with the maximum action-value from `Q`:
+   ```
+   V = np.max(Q, axis=1)
+   ```
+
+4. Compute the optimal policy `pi` based on the action-values in `Q`:
+   ```
+   pi = lambda s: {s: a for s, a in enumerate(np.argmax(Q, axis=1))}[s]
+   ```
+
+5. **Return:**
+   - The optimal value function `V`
+   - The optimal policy `pi`
+
+This algorithm iteratively updates the value function `V` until it converges, using the Bellman equation. The optimal policy is then derived from the resulting action-values in `Q`. The algorithm terminates when the maximum difference between old and new `V` is less than the specified convergence threshold `theta`.
 
 ## VALUE ITERATION FUNCTION
 Below is the Value Iteration function in Python:
