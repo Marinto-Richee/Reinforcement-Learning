@@ -159,16 +159,16 @@ results(env, optimal_pi, goal_state=goal_state)
 ```
 ## OUTPUT:
 ### State - Value Function
-![image](https://github.com/ShafeeqAhamedS/monte-carlo-control/assets/93427237/cf55e033-41c0-412f-ba29-1f7aff6ef3e7)
+![image](https://github.com/Marinto-Richee/Reinforcement-Learning/assets/65499285/bf7b8444-f5e3-41ed-b7c1-1107dccacd80)
 
 ### Action - Value Function
-![image](https://github.com/ShafeeqAhamedS/monte-carlo-control/assets/93427237/19b93272-369a-4837-a915-300c2820e4db)
+![image](https://github.com/Marinto-Richee/Reinforcement-Learning/assets/65499285/72276218-dcdb-4b75-9103-a3b59f546804)
 
 ### Policy
-![image](https://github.com/ShafeeqAhamedS/monte-carlo-control/assets/93427237/801edbb1-4db8-4408-8289-ad0710bb6973)
+![image](https://github.com/Marinto-Richee/Reinforcement-Learning/assets/65499285/bc96ec1f-df59-4864-a9ab-07f6ea7be63a)
 
 ### Success Percentage of Policy
-![image](https://github.com/ShafeeqAhamedS/monte-carlo-control/assets/93427237/cd9e4926-6d51-4254-b342-dd390096ec51)
+![image](https://github.com/Marinto-Richee/Reinforcement-Learning/assets/65499285/1125ecc1-5c41-4fd9-9929-ceb13bfe526a)
 
 ## RESULT:
 Thus a Python program is developed to find the optimal policy for the given RL environment using the Monte Carlo algorithm.
