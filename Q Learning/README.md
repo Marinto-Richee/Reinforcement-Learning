@@ -60,6 +60,18 @@ def q_learning(env,
 ```
 
 ## OUTPUT:
+### State-value function found by FVMC
+![image](https://github.com/Marinto-Richee/Reinforcement-Learning/assets/65499285/28c11d20-36f5-4faf-8663-cbd5108109fd)
+
+### State-value function found by Q-learning
+![image](https://github.com/Marinto-Richee/Reinforcement-Learning/assets/65499285/63097a98-6605-4589-985e-b9d6fe181ae7)
+
+### FVMC estimates through time vs. true values
+![image](https://github.com/Marinto-Richee/Reinforcement-Learning/assets/65499285/2b70c8f5-bdf4-465b-a46a-ad4641c84b6e)
+
+### Q-Learning estimates through time vs. true values
+![image](https://github.com/Marinto-Richee/Reinforcement-Learning/assets/65499285/835f1e59-c274-47b1-ae6c-13ba3f999371)
+
 
 ## RESULT:
 
