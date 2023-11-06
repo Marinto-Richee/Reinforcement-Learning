@@ -29,15 +29,15 @@ The transition probabilities for each action are as follows:
 
 For example, if the agent is in state S and takes the "R" action, then there is a 50% chance that it will move to state 4, a 33.33% chance that it will stay in state S, and a 16.66% chance that it will move to state 2.
 
-</br></br>
 
 ### Rewards
 
 The agent receives a reward of +1 for reaching the goal state (G). The agent receives a reward of 0 for all other states.
 
 ### Graphical Representation
-<p align="center">
-<img src="https://github.com/ShafeeqAhamedS/RL_2_Policy_Eval/assets/93427237/e7af87e7-fe73-47fa-8bea-2040b7645e44"> </p>
+
+![image](https://github.com/Marinto-Richee/Reinforcement-Learning/assets/65499285/d2857587-d2b8-4056-bd48-c51a0013a7c1)
+
 
 ## SARSA LEARNING ALGORITHM
 1. Initialize the Q-values arbitrarily for all state-action pairs.
@@ -51,8 +51,6 @@ The agent receives a reward of +1 for reaching the goal state (G). The agent rec
         5. Update the state and action.
     3. Until state is terminal.
 3. Until performance converges.
-
-</br></br></br></br></br></br>
 
 ## SARSA LEARNING FUNCTION
 ```py
@@ -105,6 +103,17 @@ def sarsa(env,
 ```
 
 ## OUTPUT:
+### State-value function found by FVMC
+![image](https://github.com/Marinto-Richee/Reinforcement-Learning/assets/65499285/40853b4c-d498-4be7-b3b3-65e23374c87a)
+
+### State-value function found by Sarsa
+![image](https://github.com/Marinto-Richee/Reinforcement-Learning/assets/65499285/5ac1093f-0e08-4600-8c0e-f6f7bec54909)
+
+### FVMC estimates through time vs. true values
+![image](https://github.com/Marinto-Richee/Reinforcement-Learning/assets/65499285/ed87bd8f-92ef-4032-94fa-ce5713e6da11)
+
+### Sarsa estimates through time vs. true values
+![image](https://github.com/Marinto-Richee/Reinforcement-Learning/assets/65499285/71e98007-4428-4d36-8cbd-d5aea0d84e95)
 
 ## RESULT:
 Thus the optimal policy for the given RL environment is found using SARSA-Learning and the state values are compared with the Monte Carlo method.
