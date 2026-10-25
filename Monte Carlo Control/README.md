@@ -105,7 +105,7 @@ def mc_control(env, gamma=1.0, init_alpha=0.5, min_alpha=0.01, alpha_decay_ratio
     return Q, V, pi
 ```
 
-### PROGRAM TO EVLUATE THE POLICY
+### PROGRAM TO EVALUATE THE POLICY
 ```python
 import random
 import numpy as np
